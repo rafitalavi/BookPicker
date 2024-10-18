@@ -1,0 +1,46 @@
+/* Container for the entire book details */
+.book-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Image container */
+  .book-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Book info styling */
+  .book-info {
+    text-align: center;
+  }
+  
+  /* Title */
+  .book-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Author, subjects, downloads */
+  .book-author, .book-subjects, .book-downloads,.copyright {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  /* Adding bold emphasis */
+  .book-info strong {
+    color: #000;
+  }
+  

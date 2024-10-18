@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './BookDetails.css'; // Import the CSS file
-import '../pages/HomePage.css'; // Import HomePage CSS if needed
+import '../styles/BookDetails.css'; // Import the CSS file
+import '../styles/HomePage.css'; // Import HomePage CSS if needed
 
 const BookDetails = () => {
   const { id } = useParams();
@@ -48,6 +48,7 @@ const BookDetails = () => {
   }
 
   return (
+    
     <div className="book-details-container">
       <div className="book-image">
         <img src={book.formats?.['image/jpeg']} alt={book.title} />
@@ -56,6 +57,8 @@ const BookDetails = () => {
         <h1 className="book-title">{book.title}</h1>
         <p className="book-author"><strong>Author:</strong> {book.authors?.[0]?.name}</p>
         <p className="book-subjects"><strong>Subjects:</strong> {book.subjects?.join(', ')}</p>
+        <p className="book-languages"><strong>laguages:</strong> {book.languages}</p>
+       
         <p className="book-downloads"><strong>Download Count:</strong> {book.download_count}</p>
       </div>
     </div>

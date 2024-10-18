@@ -1,0 +1,64 @@
+.navbar-toggler img {
+    width: 30px; 
+    height: auto; 
+  }
+ .navbar{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .navbar-toggler {
+    border: none; /* Remove default border */
+    background: transparent; /* Make background transparent */
+    outline: none;
+  }
+  .search-bar {
+    width: 600px !important; 
+  }
+  .navbar-brand, .nav-link {
+    font-size: 1.2rem !important; 
+  }
+
+
+.nav-link.active {
+    font-weight: 600; /* Make the active link bold */
+    
+    
+    
+  }
+  
+  @media (max-width: 1150px) and (min-width: 1086px) {
+    .search-bar {
+        width: 500px !important; 
+      }
+}
+@media (max-width: 1085px) and (min-width: 650px) {
+    .search-bar {
+        width: 400px !important; 
+      }
+}
+@media (max-width: 650px) and (min-width: 550px) {
+    .search-bar {
+        width: 300px !important; 
+      }
+      .navbar-brand, .nav-link {
+        font-size: 0.8 rem !important; 
+      }
+}
+
+@media (max-width: 550px)  {
+    .search-bar {
+        width: 200px !important; 
+      }
+      .navbar-brand, .nav-link {
+        font-size: 0.8 rem !important; 
+      }
+      .navbar{
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+      }
+}
+@media (max-width: 991px)  {
+    .loginbutton{
+        padding-top: 8px;
+    }
+}

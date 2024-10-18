@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom'; // Import NavLink
+import '../styles/Navbar.css'; // Import your dedicated CSS file
+import hamburgerIcon from '../assets/images/navbarIcon.png';
 
-const Navbar = ({ onSearch ,onReset }) => {
-  console.log(onSearch); // Debugging line
+const Navbar = ({ onSearch, onReset }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearchChange = (event) => {
@@ -19,26 +20,54 @@ const Navbar = ({ onSearch ,onReset }) => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/" onClick={onReset}>Book Picker</Link>
+        
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          
+           <img src={hamburgerIcon} alt="Menu"  />
+          
+        </button>
+
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          {/* Left side (Home and Wishlist) */}
+          <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={onReset}>Home</Link>
+              <NavLink className="nav-link" to="/" onClick={onReset} activeClassName="active">Home</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/wishlist">Wishlist</Link>
+              <NavLink className="nav-link" to="/wishlist" activeClassName="active">Wishlist</NavLink>
             </li>
           </ul>
-          <form className="d-flex ms-auto" onSubmit={handleSearchSubmit}>
+
+          {/* (Search bar) */}
+          <form className="d-flex mx-auto" onSubmit={handleSearchSubmit}>
             <input
-              className="form-control me-2"
+              className="form-control me-2 search-bar"
               type="search"
               placeholder="Search books by title"
               aria-label="Search"
               value={searchTerm}
               onChange={handleSearchChange}
             />
-            <button className="btn btn-outline-success" type="submit">Search</button> {/* Search button */}
+            <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
+
+          {/* Right side (Login and Signup) */}
+          <div className="d-flex ms-auto loginbutton">
+            <Link to="/login">
+              <button className="btn btn-outline-primary me-2">Login</button>
+            </Link>
+            <Link to="/signup">
+              <button className="btn btn-primary">Signup</button>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

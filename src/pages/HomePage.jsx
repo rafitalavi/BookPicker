@@ -4,7 +4,7 @@ import axios from 'axios';
 import BookItem from '../components/BookItem';
 import Pagination from '../components/Pagination';
 import { WishlistContext } from '../context/WishlistContext';
-import './HomePage.css'; // Import the CSS for the spinner
+import '../styles/HomePage.css'; 
 
 const HomePage = ({ searchTerm, genre, setGenre }) => {
   const { wishlist, addToWishlist, removeFromWishlist } = useContext(WishlistContext);
@@ -55,13 +55,13 @@ const HomePage = ({ searchTerm, genre, setGenre }) => {
   };
 
   return (
-    <div className="container">
-      <h1>Book List</h1>
-      <div className="mb-3">
+    <div className="container homepage_margin_top">
+      <h2>Wellcome To Book Picker</h2>
+      <div className="mb-3 ">
         <label htmlFor="genreFilter">Filter by Genre/Topic:</label>
-        <select id="genreFilter" onChange={handleGenreChange} value={genre}>
+        <select id="genreFilter"  className="genre-select" onChange={handleGenreChange} value={genre}>
           {genres.map((genreOption, index) => (
-            <option key={index} value={genreOption}>{genreOption}</option>
+            <option key={index}   value={genreOption}>{genreOption}</option>
           ))}
         </select>
       </div>
@@ -75,7 +75,7 @@ const HomePage = ({ searchTerm, genre, setGenre }) => {
         <>
           <div className="row">
             {currentBooks.map(book => (
-              <div className="col-md-4" key={book.id}>
+              <div className="col-lg-3 col-md-4 col-sm-6" key={book.id}>
                 <BookItem
                   book={book}
                   wishlist={wishlist}
