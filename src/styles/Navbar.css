@@ -25,6 +25,9 @@
     
     
   }
+  .logo{
+    width: 30px !important;
+  }
   
   @media (max-width: 1150px) and (min-width: 1086px) {
     .search-bar {

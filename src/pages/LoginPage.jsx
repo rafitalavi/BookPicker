@@ -57,7 +57,8 @@ export default function LoginPage() {
   }
 
   return (
-    <form className="maincontainer" onSubmit={handleSubmit}>
+    <div className="coverContainer">
+      <form className="maincontainer" onSubmit={handleSubmit}>
       <h2>Login</h2>
 
       <div className="control-row">
@@ -91,5 +92,7 @@ export default function LoginPage() {
         <button className="button button-login" type="submit">Login</button>
       </p>
     </form>
+    </div>
+    
   );
 }

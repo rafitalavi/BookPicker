@@ -11,14 +11,17 @@
   }
   .homepage_margin_top{
     margin-top: 80px;
+    height: auto;
   }
   .margin_laoding{
     margin-top: 100px;
+    margin-bottom: 90%;
   }
   .genre-select {
     
     max-width: 500px !important; 
   }
+ 
   
   @keyframes spin {
     to {

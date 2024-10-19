@@ -8,6 +8,7 @@ import BookDetails from './components/BookDetails';
 import WishlistProvider from './context/WishlistContext';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import Footer from './components/Footer';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -36,6 +37,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
         </Routes>
+        <Footer/>
       </Router>
     </WishlistProvider>
   );

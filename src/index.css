@@ -14,3 +14,6 @@ code {
 .marginTopPagination {
  margin: 15px auto ;
 }
+.main-content {
+  flex: 1;  /* This will allow the main content to grow and take up available space */
+}

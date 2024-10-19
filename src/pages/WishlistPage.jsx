@@ -19,9 +19,9 @@ const WishlistPage = () => {
 
   return (
     <div className="container wishlistContainerTopMargin">
-      <h1>Your Wishlist</h1>
+      <h1>Your Wish List</h1>
       {wishlist.length === 0 ? (
-        <p>No books in your wishlist.</p>
+        <p>No books in your wishList.</p>
       ) : (
         <div className="row">
           {wishlist.map(book => (

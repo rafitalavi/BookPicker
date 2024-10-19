@@ -27,6 +27,7 @@ export default function SignupPage() {
   }
 
   return (
+    
     <div className="maincontainer">
       <form className="signup-form" onSubmit={handleSubmit}>
         <h2 className="form-title">Welcome on board!</h2>

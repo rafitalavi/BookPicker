@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'; // Import NavLink
 import '../styles/Navbar.css'; // Import your dedicated CSS file
 import hamburgerIcon from '../assets/images/navbarIcon.png';
+import BookPickerLogo from '../assets/images/BookPickerLogo.png'
 
 const Navbar = ({ onSearch, onReset }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -19,7 +20,7 @@ const Navbar = ({ onSearch, onReset }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/" onClick={onReset}>Book Picker</Link>
+        <Link className="navbar-brand" to="/" onClick={onReset}><img className='logo' src={BookPickerLogo} alt="logo"  /> Book Picker</Link>
         
         <button
           className="navbar-toggler"
@@ -31,7 +32,7 @@ const Navbar = ({ onSearch, onReset }) => {
           aria-label="Toggle navigation"
         >
           
-           <img src={hamburgerIcon} alt="Menu"  />
+           <img  src={hamburgerIcon} alt="Menu"  />
           
         </button>
 
@@ -42,7 +43,7 @@ const Navbar = ({ onSearch, onReset }) => {
               <NavLink className="nav-link" to="/" onClick={onReset} activeClassName="active">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/wishlist" activeClassName="active">Wishlist</NavLink>
+              <NavLink className="nav-link" to="/wishlist" activeClassName="active">WishList</NavLink>
             </li>
           </ul>
 
