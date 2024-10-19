@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import '../styles/BookDetails.css'; // Import the CSS file
-import '../styles/HomePage.css'; // Import HomePage CSS if needed
+import '../styles/BookDetails.css'; 
+import '../styles/HomePage.css'; 
 
 const BookDetails = () => {
   const { id } = useParams();
