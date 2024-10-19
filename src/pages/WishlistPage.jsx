@@ -1,6 +1,7 @@
 // src/pages/WishlistPage.jsx
 import React, { useState, useEffect } from 'react';
 import BookItem from '../components/BookItem';
+import '../styles/WishlistPage.css'
 
 const WishlistPage = () => {
   const [wishlist, setWishlist] = useState([]);
@@ -17,7 +18,7 @@ const WishlistPage = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container wishlistContainerTopMargin">
       <h1>Your Wishlist</h1>
       {wishlist.length === 0 ? (
         <p>No books in your wishlist.</p>

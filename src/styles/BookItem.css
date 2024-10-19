@@ -1,0 +1,43 @@
+.bookCard{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+  
+  .bookCard:hover {
+    transform: translateY(-10px) scale(1.05); /* Move the card up by 10px and increase size by 5% */
+   
+  }
+  
+.wishlist-btn {
+    background: none;
+    border: none;     
+    padding: 0;       
+    cursor: pointer;  
+    font-size: 25px;  /* Adjust font size for both hearts */
+    outline: none;    
+    transition: transform 0.2s ease; /* Smooth hover animation */
+  }
+  
+  .wishlist-btn:hover {
+    transform: scale(1.2); /* Slightly enlarge the heart on hover */
+  }
+  
+  .wishlist-btn:active {
+    transform: scale(1.1); /* Slightly reduce size when clicked */
+  }
+  
+  .wishlist-btn:focus {
+    outline: none; /* Remove focus outline */
+  }
+  .view-details-link {
+    text-decoration: none; 
+    color: inherit;        
+    font-weight: bold;     
+  }
+  
+  .view-details-link:hover {
+    color: #4c8ec3;
+    text-decoration: underline;
+  }

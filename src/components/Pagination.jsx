@@ -8,8 +8,8 @@ const Pagination = ({ booksPerPage, totalBooks, paginate, currentPage }) => {
   }
 
   return (
-    <nav>
-      <ul className="pagination">
+    <nav className='marginTopPagination'>
+      <ul className="pagination ">
         <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
           <button onClick={() => paginate(currentPage - 1)} className="page-link">
             Previous

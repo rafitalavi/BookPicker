@@ -10,7 +10,7 @@ const HomePage = ({ searchTerm, genre, setGenre }) => {
   const { wishlist, addToWishlist, removeFromWishlist } = useContext(WishlistContext);
   const [books, setBooks] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [booksPerPage] = useState(9);
+  const [booksPerPage] = useState(8);
   const [genres, setGenres] = useState([]);
   const [loading, setLoading] = useState(true);
 
