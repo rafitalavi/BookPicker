@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage';
 import WishlistPage from './pages/WishlistPage';
 import BookDetails from './components/BookDetails';
 import WishlistProvider from './context/WishlistContext';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -31,6 +33,8 @@ function App() {
           />
           <Route path="/wishlist" element={<WishlistPage />} />
           <Route path="/book/:id" element={<BookDetails />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
         </Routes>
       </Router>
     </WishlistProvider>

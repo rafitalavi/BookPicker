@@ -1,4 +1,4 @@
-// src/pages/HomePage.js
+// src/pages/HomePage.jsx
 import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import BookItem from '../components/BookItem';
@@ -67,7 +67,7 @@ const HomePage = ({ searchTerm, genre, setGenre }) => {
       </div>
 
       {loading ? (
-        <div className="text-center"> 
+        <div className="text-center margin_laoding"> 
           <div className="spinner"></div> 
           <p>Please wait, loading...</p>
         </div>

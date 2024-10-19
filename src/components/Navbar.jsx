@@ -36,7 +36,7 @@ const Navbar = ({ onSearch, onReset }) => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          {/* Left side (Home and Wishlist) */}
+          {/*  (Home and Wishlist) */}
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <NavLink className="nav-link" to="/" onClick={onReset} activeClassName="active">Home</NavLink>
@@ -59,7 +59,7 @@ const Navbar = ({ onSearch, onReset }) => {
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
 
-          {/* Right side (Login and Signup) */}
+          {/*  (Login and Signup) */}
           <div className="d-flex ms-auto loginbutton">
             <Link to="/login">
               <button className="btn btn-outline-primary me-2">Login</button>

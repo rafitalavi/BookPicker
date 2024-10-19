@@ -1,0 +1,182 @@
+/* General container styles */
+.maincontainer {
+  padding: 25px;
+  
+
+  max-width: 500px;
+  margin: 10px auto; /* Center the form horizontally */
+  background-color: #ecf3f3;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+
+}
+
+/* Form title */
+.form-title {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 1rem 0;
+  letter-spacing: 0.2rem;
+  color: #000000;
+  text-align: center;
+}
+
+/* Custom input styles */
+.custom-input {
+  display: block;
+  width: 100%;
+  max-width: 100%; /* Make it flexible for smaller screens */
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #758a8a;
+  background-color: #fdffff;
+  color: #010202;
+  transition: border-color 0.3s;
+}
+
+.custom-input:focus {
+  border-color: #319890;
+}
+
+
+.control {
+  margin-bottom: 1rem;
+}
+
+.control label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  color: #6a6c6c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Form actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Button styles */
+.button-login {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #147b73;
+  color: #d9e2f1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-login:hover,
+.button-login:focus {
+  background-color: #319890;
+}
+
+.button-singup {
+  background-color: #f57309;
+  color: #d9e9e9;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-singup:hover,
+.button-singup:focus {
+  background-color: #d11919;
+  color: #fbffff;
+}
+
+.button-flat {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #9cbaba;
+  border: 1px solid  #147b73;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-flat:hover,
+.button-flat:focus {
+  background-color: transparent;
+  background-color: #147b73;
+  color: #d9e2f1;
+}
+
+/* Error styles */
+.control-error {
+  color: #ffca99;
+  font-size: 0.8rem;
+  height: 2rem;
+  padding: 0.5rem 0;
+}
+
+.control-error p {
+  margin: 0;
+}
+
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .maincontainer {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .form-title {
+    font-size: 2.5rem;
+  }
+
+  .control-row {
+    flex-direction: column; /* Stack inputs vertically on small screens */
+  }
+
+  .custom-input {
+    width: 100%; /* Ensure inputs are full width on small screens */
+  }
+
+  .form-actions {
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: center; /* Center buttons */
+    align-items: center; /* Align items to center */
+  }
+
+  .button-login,
+  .button-singup,
+  .button-flat {
+    width: 100%; /* Make buttons full width on small screens */
+    max-width: 8rem; /* Add max-width for better control */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 2rem; 
+  }
+
+  .button-login,
+  .button-singup,
+  .button-flat {
+    width: 70%;
+    max-width: 70%; /* Allow buttons to take full width on very small screens */
+  }
+}

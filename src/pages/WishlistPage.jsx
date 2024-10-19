@@ -1,3 +1,4 @@
+// src/pages/WishlistPage.jsx
 import React, { useState, useEffect } from 'react';
 import BookItem from '../components/BookItem';
 
@@ -23,7 +24,7 @@ const WishlistPage = () => {
       ) : (
         <div className="row">
           {wishlist.map(book => (
-            <div className="col-md-4" key={book.id}>
+            <div className="col-lg-3 col-md-4 col-sm-6" key={book.id}>
               <BookItem 
                 book={book} 
                 wishlist={wishlist}  
