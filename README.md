@@ -71,7 +71,7 @@ Book Picker is a React-based web application designed to allow users to browse, 
         │   ├── index.js                         # Entry point for the app 
         └── node_modules/                        # External dependencies
 
-
+```
 ## Installation
 
 1. **Clone the repository:**
