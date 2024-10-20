@@ -1,17 +1,17 @@
 /* Footer styling */
 .footer {
-    background-color: #f4f7f4;
+    background-color: #e6ede6;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
     width: 100%;
-      
+      margin-top: 25px;
     bottom: 0;        
     left: 0;
    
   }
   
   .footer h5 {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   
@@ -26,7 +26,7 @@
   }
   
   .footer ul li a {
-    color: #007bff;
+    color: #0c0c0c;
     text-decoration: none;
   }
   
@@ -45,8 +45,8 @@
   }
   
   .social-icons li a {
-    font-size: 18px;
-    color: #007bff;
+    font-size: 15px;
+    color: #0a0a0a;
   }
   
   /* Responsive adjustments */

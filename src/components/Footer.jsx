@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="col-md-4 col-sm-12">
             <h5>Follow Us</h5>
             <ul className="social-icons">
-              <li><a href="https://facebook.com">Facebook</a></li>
+              <li> <a href="https://facebook.com">Facebook</a></li>
               <li><a href="https://twitter.com">Twitter</a></li>
               <li><a href="https://instagram.com">Instagram</a></li>
             </ul>
