@@ -35,7 +35,7 @@ Book Picker is a React-based web application designed to allow users to browse, 
     Other Tools: Axios (for API requests), React Router (for navigation)    
 
 ## Folder Structure:
-plaintext
+```plaintext
    book-picker/
         ├── public/
         │   ├── index.html
