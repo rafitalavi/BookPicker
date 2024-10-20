@@ -1,3 +1,42 @@
+# Book Picker
+
+Book Picker is a React-based web application designed to allow users to browse, search, and save books of interest. The app is tailored to help book enthusiasts discover new reads, view detailed information on specific books, and manage a list of favorites.
+
+## Key Features
+
+- **Browse Books:**
+    - Users can browse a curated list of books displayed on the homepage.
+  
+- **Book Details:**
+    - Users can click on any book to view detailed information, including a description, author, and other relevant data on the Book Details Page.
+
+- **WishList:**
+    - Users can mark books as favorites, which will then appear on the WishList Page for quick access.
+  
+- **Search Functionality:**
+    - Users can search for books using Title. The search results will be displayed on the Search Results Page.
+- **Filter Functionality:**
+    - Users can Filter  books using gener/topic. The  results will be displayed on the home page Page.      
+
+- **Responsive Design:**
+    - The layout is responsive, ensuring the app works well on mobile devices, tablets, and desktop browsers.
+
+
+#Live Demo:
+    Link:https://bookpicker.netlify.app/
+
+#Technologies
+
+    Frontend: React, HTML5, CSS3, JavaScript (ES6+)
+    Styling: Tailwind CSS, Bootstrap 5, Sass (SCSS)
+    State Management: React Hooks, Context API (or Redux, if used)
+    Package Manager: npm
+    Version Control: Git & GitHub
+    Other Tools: Axios (for API requests), React Router (for navigation)    
+
+## Folder Structure:
+   book-picker/ ├── public/ │ ├── index.html ├── src/ │ ├── assets/ # Contains images, icons, and other static assets │ ├── components/ # Reusable components like Navbar, BookList, etc. │ ├── context/ # Context files for global state management │ ├── pages/ # Full-page views (Home, Book Details, Favorites, etc.) │ │ ├── HomePage.js │ │ ├── BookDetailsPage.js │ │ ├── FavoritesPage.js │ │ ├── SearchResultsPage.js │ ├── styles/ # CSS files for styling components and pages │ │ ├── HomePage.css │ │ ├── BookDetailsPage.css │ │ ├── FavoritesPage.css │ │ ├── SearchResultsPage.css │ │ ├── navbar.css │ │ └── global.css │ ├── App.js # Main app structure with routes │ ├── index.js # Entry point for the app └── node_modules/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
