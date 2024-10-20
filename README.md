@@ -22,10 +22,10 @@ Book Picker is a React-based web application designed to allow users to browse, 
     - The layout is responsive, ensuring the app works well on mobile devices, tablets, and desktop browsers.
 
 
-#Live Demo:
+##Live Demo:
     Link:https://bookpicker.netlify.app/
 
-#Technologies
+##Technologies
 
     Frontend: React, HTML5, CSS3, JavaScript (ES6+)
     Styling: Tailwind CSS, Bootstrap 5, Sass (SCSS)
@@ -35,7 +35,71 @@ Book Picker is a React-based web application designed to allow users to browse, 
     Other Tools: Axios (for API requests), React Router (for navigation)    
 
 ## Folder Structure:
-   book-picker/ ├── public/ │ ├── index.html ├── src/ │ ├── assets/ # Contains images, icons, and other static assets │ ├── components/ # Reusable components like Navbar, BookList, etc. │ ├── context/ # Context files for global state management │ ├── pages/ # Full-page views (Home, Book Details, Favorites, etc.) │ │ ├── HomePage.js │ │ ├── BookDetailsPage.js │ │ ├── FavoritesPage.js │ │ ├── SearchResultsPage.js │ ├── styles/ # CSS files for styling components and pages │ │ ├── HomePage.css │ │ ├── BookDetailsPage.css │ │ ├── FavoritesPage.css │ │ ├── SearchResultsPage.css │ │ ├── navbar.css │ │ └── global.css │ ├── App.js # Main app structure with routes │ ├── index.js # Entry point for the app └── node_modules/
+   book-picker/
+        ├── public/
+        │   ├── index.html
+        ├── src/                                 
+        │   ├── assets/                          # Contains images, icons, and other static assets
+        │   │   ├── images/
+        |   │   │   ├── BookPickerLogo.png
+        │   ├── components/                      # Reusable
+        │   │   ├── BookDetails.jsx
+        │   │   ├── BookItem.jsx
+        │   │   ├── Footer.jsx
+        │   │   ├── Input.jsx
+        │   │   ├── Navbar.jsx
+        │   │   ├── Pagination.jsx
+        │   ├── context/
+        │   │   ├── WishlistContext.jsx
+        │   ├── pages/                            # Full-page views         
+        │   │   ├── HomePage.jsx
+        │   │   ├── SignupPage.jsx
+        │   │   ├── WishListPage.jsx
+        │   │   ├── Login.jsx
+        │   ├── styles/                           # CSS files for styling components and pages
+        │   │   ├── HomePage.css
+        │   │   ├── BookDetails.css
+        │   │   ├── BookItem.css
+        │   │   ├── WishListPage.css
+        │   │   ├── Footer.css
+        │   │   ├── LoginSingup.css
+        │   │   ├── Navbar.css
+        │   ├── util/  
+        │   │   ├── Validation.js
+        │   ├── App.jsx                          # Main app structure with routes
+        │   ├── index.js                         # Entry point for the app 
+        └── node_modules/                        # External dependencies
+
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/book-picker.git
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd book-picker
+
+4. **Clone the repository:**
+   ```bash
+   npm install
+
+6. **Run the application::**
+   ```bash
+   npm start
+
+   The app will be available at http://localhost:3000.
+##  Usage
+   1. **HomePage:** Displays a list of books.
+   2. **BookDetails:** Shows detailed information about a selected book
+   3. **WishListPage:** Allows users to view their favorite books.
+   4. **SearchResults:** Displays books that match the user’s search query.
+## Future Enhancements
+1. **User Authentication**: Add login/logout functionality so users can save their favorites across devices.
+2. **Pagination**: Implement pagination for large book lists.
+3. **Backend Integration**: Extend the project with axios to fetch real-time book data.
 
 # Getting Started with Create React App
 
